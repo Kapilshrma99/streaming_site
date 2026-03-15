@@ -1,0 +1,42 @@
+# --- Dependencies ---
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# --- Next.js / Frontend ---
+**/frontend/.next/
+**/frontend/out/
+**/frontend/build/
+**/frontend/.next-env.d.ts
+
+# --- Environment Secrets (CRITICAL) ---
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+**/secrets.json
+
+# --- Docker & Logs ---
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+.docker/
+**/data/db/   # If you mount Mongo data locally
+
+# --- OS / Editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Build Artifacts ---
+**/dist/
+**/target/
+**/bin/

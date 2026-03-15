@@ -1,0 +1,32 @@
+# Ignore all node_modules (Docker will install its own inside the container)
+**/node_modules
+**/package-lock.json
+
+# Ignore build outputs
+**/dist
+**/.next
+**/out
+**/build
+
+# Ignore local environment files
+**/.env
+**/.env.local
+**/.env.production
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore Docker files themselves
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
+.dockerignore
+
+# Ignore logs
+**/*.log
+npm-debug.log*
+
+# Ignore OS metadata
+.DS_Store
+Thumbs.db
