@@ -38,6 +38,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    # image: kapilsharma763/tango-backend:latest
     container_name: tango_backend
     restart: unless-stopped
     env_file: ./backend/.env
@@ -58,6 +59,7 @@ services:
     build:
       context: ./chat-service
       dockerfile: Dockerfile
+    # image: kapilsharma763/tango-chat-service:latest
     container_name: tango_chat
     restart: unless-stopped
     env_file: ./chat-service/.env
@@ -76,6 +78,7 @@ services:
     build:
       context: ./payment-service
       dockerfile: Dockerfile
+    # image: kapilsharma763/tango-payment-service:latest
     container_name: tango_payment
     restart: unless-stopped
     env_file: ./payment-service/.env
@@ -93,6 +96,7 @@ services:
     build:
       context: ./streaming-server
       dockerfile: Dockerfile
+    # image: kapilsharma763/tango-streaming-server:latest
     container_name: tango_streaming
     restart: unless-stopped
     env_file: ./streaming-server/.env
@@ -108,6 +112,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    # image: kapilsharma763/tango-frontend:latest
     container_name: tango_frontend
     restart: unless-stopped
     env_file: ./frontend/.env
@@ -127,6 +132,7 @@ services:
     build:
       context: ./nginx
       dockerfile: Dockerfile
+    # image: kapilsharma763/tango-nginx:latest
     container_name: tango_nginx
     restart: unless-stopped
     ports:
